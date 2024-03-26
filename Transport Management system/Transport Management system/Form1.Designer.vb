@@ -25,27 +25,27 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.username = New System.Windows.Forms.TextBox()
+        Me.password = New System.Windows.Forms.TextBox()
+        Me.email = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.login = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(148, 88)
+        Me.Label1.Location = New System.Drawing.Point(148, 104)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(76, 17)
+        Me.Label1.Size = New System.Drawing.Size(65, 17)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "First Name"
+        Me.Label1.Text = "Userame"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(148, 216)
+        Me.Label2.Location = New System.Drawing.Point(158, 180)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(42, 17)
         Me.Label2.TabIndex = 1
@@ -54,52 +54,35 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(148, 283)
+        Me.Label3.Location = New System.Drawing.Point(148, 261)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(68, 17)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "password"
         '
-        'Label4
+        'username
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(148, 153)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(76, 17)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Last Name"
+        Me.username.Location = New System.Drawing.Point(303, 104)
+        Me.username.Multiline = True
+        Me.username.Name = "username"
+        Me.username.Size = New System.Drawing.Size(276, 33)
+        Me.username.TabIndex = 4
         '
-        'TextBox1
+        'password
         '
-        Me.TextBox1.Location = New System.Drawing.Point(303, 88)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(276, 33)
-        Me.TextBox1.TabIndex = 4
+        Me.password.Location = New System.Drawing.Point(303, 258)
+        Me.password.Multiline = True
+        Me.password.Name = "password"
+        Me.password.Size = New System.Drawing.Size(276, 33)
+        Me.password.TabIndex = 5
         '
-        'TextBox2
+        'email
         '
-        Me.TextBox2.Location = New System.Drawing.Point(303, 280)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(276, 33)
-        Me.TextBox2.TabIndex = 5
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(303, 213)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(276, 33)
-        Me.TextBox3.TabIndex = 6
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(303, 150)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(276, 33)
-        Me.TextBox4.TabIndex = 7
+        Me.email.Location = New System.Drawing.Point(303, 177)
+        Me.email.Multiline = True
+        Me.email.Name = "email"
+        Me.email.Size = New System.Drawing.Size(276, 33)
+        Me.email.TabIndex = 6
         '
         'Label5
         '
@@ -111,17 +94,39 @@ Partial Class Form1
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Star Transport "
         '
+        'login
+        '
+        Me.login.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.login.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.login.Location = New System.Drawing.Point(348, 332)
+        Me.login.Name = "login"
+        Me.login.Size = New System.Drawing.Size(108, 43)
+        Me.login.TabIndex = 9
+        Me.login.Text = "Login"
+        Me.login.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(620, 380)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(168, 43)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "Book transport"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.login)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.email)
+        Me.Controls.Add(Me.password)
+        Me.Controls.Add(Me.username)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -135,10 +140,10 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents username As TextBox
+    Friend WithEvents password As TextBox
+    Friend WithEvents email As TextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents login As Button
+    Friend WithEvents Button1 As Button
 End Class
