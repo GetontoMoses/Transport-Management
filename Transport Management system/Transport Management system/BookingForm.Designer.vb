@@ -26,17 +26,18 @@ Partial Class BookingForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtdate = New System.Windows.Forms.TextBox()
-        Me.txtdestination = New System.Windows.Forms.TextBox()
-        Me.txtpickup = New System.Windows.Forms.TextBox()
+        Me.destination = New System.Windows.Forms.TextBox()
+        Me.pickup = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.bookdate = New System.Windows.Forms.DateTimePicker()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Book
         '
         Me.Book.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.Book.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Book.Location = New System.Drawing.Point(515, 306)
+        Me.Book.Location = New System.Drawing.Point(320, 294)
         Me.Book.Name = "Book"
         Me.Book.Size = New System.Drawing.Size(108, 43)
         Me.Book.TabIndex = 0
@@ -70,29 +71,21 @@ Partial Class BookingForm
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Pickup Point"
         '
-        'txtdate
+        'destination
         '
-        Me.txtdate.Location = New System.Drawing.Point(256, 75)
-        Me.txtdate.Multiline = True
-        Me.txtdate.Name = "txtdate"
-        Me.txtdate.Size = New System.Drawing.Size(242, 41)
-        Me.txtdate.TabIndex = 4
+        Me.destination.Location = New System.Drawing.Point(256, 207)
+        Me.destination.Multiline = True
+        Me.destination.Name = "destination"
+        Me.destination.Size = New System.Drawing.Size(242, 41)
+        Me.destination.TabIndex = 5
         '
-        'txtdestination
+        'pickup
         '
-        Me.txtdestination.Location = New System.Drawing.Point(256, 207)
-        Me.txtdestination.Multiline = True
-        Me.txtdestination.Name = "txtdestination"
-        Me.txtdestination.Size = New System.Drawing.Size(242, 41)
-        Me.txtdestination.TabIndex = 5
-        '
-        'txtpickup
-        '
-        Me.txtpickup.Location = New System.Drawing.Point(256, 143)
-        Me.txtpickup.Multiline = True
-        Me.txtpickup.Name = "txtpickup"
-        Me.txtpickup.Size = New System.Drawing.Size(242, 41)
-        Me.txtpickup.TabIndex = 6
+        Me.pickup.Location = New System.Drawing.Point(256, 143)
+        Me.pickup.Multiline = True
+        Me.pickup.Name = "pickup"
+        Me.pickup.Size = New System.Drawing.Size(242, 41)
+        Me.pickup.TabIndex = 6
         '
         'Label4
         '
@@ -104,15 +97,34 @@ Partial Class BookingForm
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Booking information"
         '
+        'bookdate
+        '
+        Me.bookdate.Location = New System.Drawing.Point(256, 82)
+        Me.bookdate.Name = "bookdate"
+        Me.bookdate.Size = New System.Drawing.Size(249, 22)
+        Me.bookdate.TabIndex = 8
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(582, 379)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(164, 43)
+        Me.Button1.TabIndex = 9
+        Me.Button1.Text = "Back to login"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'BookingForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.bookdate)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.txtpickup)
-        Me.Controls.Add(Me.txtdestination)
-        Me.Controls.Add(Me.txtdate)
+        Me.Controls.Add(Me.pickup)
+        Me.Controls.Add(Me.destination)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -128,8 +140,9 @@ Partial Class BookingForm
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtdate As TextBox
-    Friend WithEvents txtdestination As TextBox
-    Friend WithEvents txtpickup As TextBox
+    Friend WithEvents destination As TextBox
+    Friend WithEvents pickup As TextBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents bookdate As DateTimePicker
+    Friend WithEvents Button1 As Button
 End Class
